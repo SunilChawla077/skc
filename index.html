@@ -17,12 +17,28 @@
     header {
       background: url('https://images.unsplash.com/photo-1524995997946-a1c2e315a42f') no-repeat center center/cover;
       color: white;
-      padding: 60px 20px;
+      padding: 60px 20px 20px;
       text-align: center;
+      position: relative;
+    }
+
+    header img.logo {
+      width: 80px;
+      position: absolute;
+      top: 20px;
+      left: 20px;
+      border-radius: 8px;
+    }
+
+    header img.photo {
+      width: 120px;
+      border-radius: 50%;
+      border: 4px solid white;
+      margin-top: 20px;
     }
 
     header h1 {
-      margin: 0;
+      margin: 10px 0 0;
       font-size: 3rem;
     }
 
@@ -85,6 +101,25 @@
       margin-left: -1em;
     }
 
+    .cv-download {
+      text-align: center;
+      margin-top: 20px;
+    }
+
+    .cv-download a {
+      display: inline-block;
+      background-color: #004080;
+      color: white;
+      padding: 10px 20px;
+      border-radius: 6px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    .cv-download a:hover {
+      background-color: #003366;
+    }
+
     footer {
       background: #004080;
       color: white;
@@ -96,6 +131,8 @@
 </head>
 <body>
   <header>
+    <img src="college-logo.png" alt="College Logo" class="logo">
+    <img src="sunil-photo.jpg" alt="Sunil Kumar Chawla" class="photo">
     <h1>Sunil Kumar Chawla</h1>
     <p>Assistant Professor in Commerce | 17+ Years Experience</p>
   </header>
@@ -160,6 +197,10 @@
     <p><strong>Date of Birth:</strong> 19-03-1983</p>
     <p><strong>Languages:</strong> English, Hindi, Telugu</p>
     <p><strong>Marital Status:</strong> Married</p>
+
+    <div class="cv-download">
+      <a href="Sunil_Kumar_Chawla_CV.pdf" download>Download My CV</a>
+    </div>
   </section>
 
   <footer>
